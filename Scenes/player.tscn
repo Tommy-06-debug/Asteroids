@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c1owlh285f82h"]
+
+[ext_resource type="Script" uid="uid://dr261dm1odotl" path="res://Scripts/player.gd" id="1_v0iea"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_a4myo"]
+points = PackedVector2Array(15.999998, -43, 4.9999995, -9, 27, -9.000001)
+
+[node name="Player" type="CharacterBody2D" unique_id=1442274296]
+script = ExtResource("1_v0iea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1001190512]
+position = Vector2(-16, 24)
+shape = SubResource("ConvexPolygonShape2D_a4myo")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=661531596]
+rotation = -1.5707964
+polygon = PackedVector2Array(-24.000008, -16, -16.000008, 0, -24, 16, 23.999992, 0)
+uv = PackedVector2Array(0, 0, 8, 16.000004, 0, 32, 47.999996, 15.999998)
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=89675102]
+position = Vector2(0, -24)
