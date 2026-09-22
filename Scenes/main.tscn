@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://vq5qlf4fwb2t"]
 
+[ext_resource type="Script" uid="uid://qoi3cijieon2" path="res://Scripts/main.gd" id="1_bo1nx"]
 [ext_resource type="PackedScene" uid="uid://c1owlh285f82h" path="res://Scenes/player.tscn" id="1_jjgbg"]
 
 [node name="Main" type="Node2D" unique_id=1543115108]
+script = ExtResource("1_bo1nx")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1436996800]
 
 [node name="Player" parent="." unique_id=1442274296 instance=ExtResource("1_jjgbg")]
-position = Vector2(-21, -16)
