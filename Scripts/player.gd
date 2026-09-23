@@ -19,6 +19,8 @@ func _physics_process(delta: float) -> void:
 		velocity += -transform.y * thrust * delta  
 	
 	velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+	 
+	print(velocity)
 	
 	move_and_slide()
 	wrap_around()
